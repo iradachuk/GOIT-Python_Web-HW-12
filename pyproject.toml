@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "goit-python-web-hw-12"
+version = "0.1.0"
+description = ""
+authors = ["Iryna Dachuk <iradachuk@gmail.com>"]
+readme = "README.md"
+packages = [{include = "goit_python_web_hw_12"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+uvicorn = {extras = ["standart"], version = "^0.22.0"}
+fastapi = "^0.100.0"
+sqlalchemy = "^2.0.18"
+alembic = "^1.11.1"
+psycopg2 = "^2.9.6"
+pydentic = {extras = ["email"], version = "^0.0.1.dev3"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+libgravatar = "^1.0.4"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
